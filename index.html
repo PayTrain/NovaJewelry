@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+
+   <!--
+    CREDITS FOR THE IMAGES USED IN THIS FILE:
+
+        Images: 
+            jewelryDish pulled from:
+                author: LUM3N
+                date: April 14, 2020
+                url: https://unsplash.com/photos/gold-and-green-bracelet-on-brown-textile-lbEL705stOw
+            goldNecklaceModel pulled from: 
+                author: Simeon Asenov
+                date: July 4, 2024
+                url: https://unsplash.com/photos/a-woman-with-long-hair-wearing-a-black-shirt-EiGyrsp8KPM
+            circleEarringModel pulled from:
+                author: Simeon Asenov
+                date: July 4, 2024
+                url: https://unsplash.com/photos/a-woman-with-long-hair-wearing-a-jacket-and-earrings-clGIJgPHXvA
+            hoopEarringModel pulled from:
+                author: Simeon Asenov
+                date: July 1, 2024
+                url: https://unsplash.com/photos/a-woman-in-a-white-tank-top-posing-for-a-picture-ou0jMipZY4Q
+    -->
+
+    <head>
+
+        <!-- Metadata of the document -->
+        <meta charset="utf-8">
+        <meta name="Keywords" content="Nova Jewelry">
+        <meta name="author" content="Payton Murphy">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- The following lines are required to pull from bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap-grid.css" />
+        <link rel="stylesheet" href="css/grid.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- This gives access to icons -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <title>Nova Jewelry</title>
+
+        <style>
+            
+            h3 {
+                font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+                color: #5e4b3a;
+                font-weight: bold;
+            }  
+
+            h5 a, h6 {
+                font-family: 'Franklin Gothic Narrow', 'Arial Narrow', Arial, sans-serif;
+                color: #5e4b3a;
+            }
+
+            h7, p {
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: #5e4b3a;
+            }
+            
+            i {
+                color: #5e4b3a;
+                font-size: 20px;
+            }
+
+            i:hover {
+                color: #DFBD69;
+            }
+
+            .spacerDiv {
+                height: 40px;
+            }
+
+            .mainImg {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .mainImgColumn {
+                height: 700px;
+                position: relative;
+            }
+
+            .overlay-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: #fff;
+            }
+
+            .overlay-text h2 {
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+                font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+            }
+
+            .mainButton, .mainButton:focus:active {
+                background-color: #dfbe6900;
+                border-color: #fff;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 1.5rem;
+                border-radius: 25px;
+            }
+
+            .mainButton:hover {
+                background-color: #5e4b3a;
+                border-color: #5e4b3a;
+            }
+
+            .mainContentSpan {
+                margin: auto;
+            }
+
+            .textLink {
+                color: #5e4b3a;
+            }
+
+            .textLink:hover {
+                color: #DFBD69;
+            }
+
+            .card {
+                overflow: hidden;
+            }
+
+            .card-img-top {
+                transition: transform 0.3s ease;
+            }
+
+            .card-img-top:hover {
+                transform: scale(1.05); /* Zoom on hover*/
+            }   
+
+            .inputButton, .inputButton:focus:active {
+                background-color: #5e4b3a;
+                color: #f2e6c8;
+            }
+
+            .inputButton:hover {
+                background-color: #DFBD69;
+                color: #f2e6c8;
+            }
+
+            .navIcons {
+                font-size: 20px;
+                text-align: right;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                height: 100%;
+
+            }
+
+            .socialIcons {
+                font-size: 30px;
+                text-align: left;
+                align-items: center;
+            }
+            
+            .tertiaryIcons {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            .flexContainer {
+                display: flex;
+                flex-direction: column; 
+                justify-content: center; 
+                align-items: center;
+                text-align: center;
+            }
+            
+            .navIconsContainer {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex-direction: row;
+                gap: 25px; /* Adds space between the icons */
+                font-size: 20px;
+                font-weight: bold;
+            } 
+
+            .firstRow {
+                padding-top: 20px;
+            }
+
+            .lastRow {
+                padding-bottom: 20px;
+            }
+
+            .rowContainer {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: row;
+                gap: 25px; /* Add space between the icons */
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            
+        </style>
+
+    </head>
+
+    <!-- MAIN CONTENT OF MY PAGE -->
+    <body> 
+            <div class="container-fluid">
+
+                <!-- MAIN NAVIGATION -->
+                <div class="row firstRow mainContentSpan">
+                    
+                    <!-- Title -->
+                    <div class="col-4">
+                        <h3>Nova Jewelry</h3>
+                    </div>
+
+                    <!-- Nav Bar Items -->
+                    <div class="col-1 flexContainer">
+                        <h5 class="text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">Home</a></h5>
+                    </div>
+                    <div class="col-1 flexContainer">
+                        <h5 class="text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">Shop All</a></h5>
+                    </div>
+                    <div class="col-1 flexContainer">
+                        <h5 class="text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">Sale</a></h5>
+                    </div>
+                    <div class="col-1 flexContainer">
+                        <h5 class="text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">About</a></h5>
+                    </div>
+
+                    <!-- Navigation Icons -->
+                    <div class="col-4 navIconsContainer">
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-search navIcons"></i></a>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-heart navIcons"></i></a>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-cart navIcons"></i></a>
+                    </div>
+                </div>
+
+                <!-- MAIN IMAGE -->
+                <div class="row">
+                    <div class="col-12 p-0 m-0 mainImgColumn text-center align-content-center">
+                        <img src="images/jewelryDish.jpg" alt="Gold jewelry on a table." class="mainImg">
+                        <div class="overlay-text">
+                            <h2>Discover Our Latest Collection</h2>
+                            <a href="#" class="btn mainButton" type="button">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAIN CONTENT -->
+
+                <div class="spacerDiv">&nbsp;</div>
+
+                <!-- SUBHEADER -->
+                <div class="row mainContentSpan">
+                    <div class="col-12 text-center">
+                        <h3>The Bestsellers</h3>
+                    </div>
+                </div>
+
+                <!-- SECONDARY CONTENT -->
+                <div class="row mainContentSpan">
+
+                    <!-- Product Cards -->
+                    <div class="col-4">
+                        <div class="card mx-auto">
+                            <a href="#"><img class="card-img-top" src="images/circleEarringModel.jpg" alt="A person modeling a gold dangle earring"></a>
+                            <div class="card-body">
+                                <h6 class="cardtitle text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">Solara Dangle</a></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card mx-auto">
+                            <a href="#"><img class="card-img-top" src="images/hoopEarringModel.jpg" alt="A person modeling a hoop earring"></a>
+                            <div class="card-body">
+                                <h6 class="cardtitle text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">Aurora Hoop</a></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="card mx-auto">
+                            <a href="#"><img class="card-img-top" src="images/goldNecklaceModel.jpg" alt="A person modeling a necklace"></a>
+                            <div class="card-body">
+                                <h6 class="cardtitle text-center"><a class="textLink link-underline link-underline-opacity-0" href="#">Nebula Choker</a></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacerDiv">&nbsp;</div>
+                <div class="spacerDiv">&nbsp;</div>
+
+                <!-- Tertiaty content -->
+
+                <!-- SUBHEADER -->
+                <div class="row mainContentSpan">
+                    <div class="col-12 text-center">
+                        <h3>Join The Community</h3>
+                    </div>
+                </div>
+
+                <div class="spacerDiv">&nbsp;</div>
+
+                <div class="row mainContentSpan">
+
+                    <!-- Social Media Icons -->
+                    <div class="col-4 rowContainer">
+                        <h7>Follow Us &nbsp;</h7>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-instagram socialIcons"></i></a>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-tiktok socialIcons"></i></a>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-pinterest socialIcons"></i></a>
+                        <h7>&nbsp; #nebulastyle</h7>
+                    </div>
+                    
+
+                    <!-- Calls to Action -->
+                    <div class="col-2 flexContainer">
+                        <h7>Download the App</h7>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-phone tertiaryIcons"></i></a>
+                    </div> 
+
+                    <div class="col-2 flexContainer">
+                        <h7>Find Your Store</h7>
+                        <a href="#" class="textLink link-underline link-underline-opacity-0"><i class="bi bi-pin-map tertiaryIcons"></i></a>
+                    </div>
+
+                    <!-- Input Group (Email) -->
+                    <div class="col-4 flexContainer">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                              <button class="btn inputButton" type="button">Subscribe</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+
+                <div class="spacerDiv">&nbsp;</div>
+                <div class="spacerDiv">&nbsp;</div>
+
+            </div>
+    </body>
+</html>
